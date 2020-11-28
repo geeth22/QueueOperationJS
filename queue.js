@@ -26,8 +26,10 @@ checkoption = function () {
             case '6':
                 let lengthofqueue = Utility.length();
                 console.log(lengthofqueue);
+		break;
             case '7':
                 Utility.clear();
+		break;
             case '8':
                 isTerminated = false;
                 break;
