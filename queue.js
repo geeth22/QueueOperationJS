@@ -3,7 +3,7 @@ let readlineSync = require('readline-sync')
 checkoption = function () {
     let isTerminated = true;
     while (isTerminated == true) {
-        let checkoption = readlineSync.question("\nEner your choice:\n1.enqueue\n2.dequeue\n3.print\nn4.exit\n");
+        let checkoption = readlineSync.question("\nEner your choice:\n1.enqueue\n2.dequeue\n3.print\n4.frontElement\n5.exit\n");
         switch (checkoption) {
             case '1':
                 let element = readlineSync.question("Enter the element:");
@@ -16,6 +16,10 @@ checkoption = function () {
                 Utility.print();
                 break;
             case '4':
+                frontElement = Utility.getFront();
+                console.log(frontElement);
+                break;
+            case '5':
                 isTerminated = false;
                 break;
             default: console.log("please enter correct option");
