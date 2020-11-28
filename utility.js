@@ -51,6 +51,15 @@ class Queue {
      }
   }
 
+  length() {
+    
+     return this.rear;
+  } 
+
+  clear() {
+   this.data.length = 0;
+   this.rear = 0;
+  }
 }
 module.exports = new Queue();
 
