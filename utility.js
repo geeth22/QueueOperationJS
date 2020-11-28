@@ -29,6 +29,13 @@ class Queue {
      }
    }
 
+   print() {
+   
+   for(let i =0; i < this.rear; i++) {
+      console.log(this.data[i]);
+    }
+  }
+
 }
 module.exports = new Queue();
 
