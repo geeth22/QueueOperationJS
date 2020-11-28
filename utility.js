@@ -36,6 +36,13 @@ class Queue {
     }
   }
 
+   getFront() {
+   
+    if(this.isEmpty() === false) {
+        return this.data[0];
+    }
+  }
+
 }
 module.exports = new Queue();
 
