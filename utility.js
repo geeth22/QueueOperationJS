@@ -43,6 +43,14 @@ class Queue {
     }
   }
 
+  getLast() {
+    
+     if(this.isEmpty() === false) {
+       
+          return this.data[ this.rear - 1 ] ;
+     }
+  }
+
 }
 module.exports = new Queue();
 
